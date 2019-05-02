@@ -1,65 +1,227 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8"><title>Carlos Justiniano</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
-    <title>Cjus.github.io by cjus</title>
-  </head>
+<style>body {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 50px;
+    color: #3f475a;
+    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    word-wrap: break-word;
+    background: #fefefe;
+    letter-spacing: 0.02em;
+}
 
-  <body>
+::selection {
+    background-color: rgba(104,112,145, 0.2)
+}
 
-    <header>
-      <div class="container">
-        <h1>Cjus.github.io</h1>
-        <h2></h2>
+h1, h2, h3, h4, h5, h6 {
+    color: #257FAD;
+    font-weight: 400;
+}
 
-        <section id="downloads">
-          <a href="https://github.com/cjus" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+h1 {
+    font-size: 1.3em;
+}
 
-    <div class="container">
-      <section id="main_content">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+h2 {
+    font-size: 1.2em;
+}
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+h3 {
+    font-size: 1.1em;
+}
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+h4,h5,h6 {
+    font-size: 1em;
+}
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+hr {
+    border-color: rgba(104,112,145, 0.24) !important;
+    border-style: dotted;
+}
+a {
+    color: #519548;
+    text-decoration: none;
+}
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+a:hover {
+    text-decoration: underline;
+}
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+code {
+    color: #918B3B;
+}
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+em, strong {
+    color: #D22D72;
+}
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+blockquote {
+    background: #F7F7F7;
+    border-left: 2px solid #d33682;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+blockquote p {
+    color: #000;
+    display: inline;
+}
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: keep-all;
+    border-collapse: collapse;
+}
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+table th {
+    font-weight: bold;
+}
 
-    
-  </body>
+table th,
+table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+}
+
+table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+</style></head>
+<body>
+
+    <h1>Carlos Justiniano</h1>
+
+<p><img src="http://gravatar.com/avatar/e2e942d05d5ea93ad2eddd3394ffcd96" alt="Carlos Justiniano"></p>
+
+<p>Veteran software developer, <a href="http://www.guinnessworldrecords.com/world-records/largest-networked-chess-computer/">world record holder</a>, author, and <a href="http://cjusphoto.com" target="_blank">photographer</a>.</p>
+
+<ul>
+<li>Currently, VP of Engineering at Flywheel Sports.</li>
+<li>Previously, Chief Software Architect at Flywheel Sports. Founder and Organizer of the <a href="https://www.meetup.com/NYC-JavaScript-Flatiron/" target="_blank">NYC JavaScript @ Flatiron</a> group.</li>
+<li>Formally Head of Engineering at Estate Assist, VP. of Engineering and Tech Founder at inSparq. Founded and advised numerous start-ups. Prior: Director of Software Development at iPayment.</li>
+<li>Founder and core committer on the <a href="https://www.npmjs.com/package/hydra">Hydra open source project</a> for building Distributed Applications such as Microservices.</li>
+<li>Technology interests: NodeJS Microservices, Serverless, Containerization / Docker, AWS, Messaging, Communication protocols, NoSQL - MongoDB / Neo4j (GraphDB), Redis, Fullstack JavaScript, ReactJS/ReactNative, IoT (Arduino, RaspberryPi)</li>
+</ul>
+
+<h2>Contact / Social</h2>
+
+<ul>
+<li>Voice Mail: <a href="tel:+18057684310">(805) 768-4310</a></li>
+<li>LinkedIn: <a href="http://www.linkedin.com/in/carlosjustiniano" target="_blank">carlosjustiniano</a></li>
+<li>Twitter: <a href="http://twitter.com/cjus" target="_blank">@cjus</a></li>
+<li>GitHub: <a href="http://github.com/cjus" target="_blank">cjus</a></li>
+<li>Email: <a href="mailto:cjus34@gmail.com" target="_blank">cjus34@gmail.com</a></li>
+<li>Medium / Tech blog posts: <a href="https://medium.com/@cjus">@cjus</a></li>
+<li>Photography: <a href="http://www.cjusphoto.com" target="_blank">cjusphoto.com</a></li>
+</ul>
+
+<hr>
+
+<h2>Accomplishments</h2>
+
+<ul>
+<li>30+ years in the software industry. Experience working with small privately funded start-ups to large Fortune 100 companies on small applications to large scale enterprise systems.</li>
+<li>Six mobile / wearable apps in the Samsung Galaxy App Store.</li>
+<li>Contributed to the release of 14 commercial products from business applications to computer games.</li>
+<li>Awarded a 2005 Guinness World Record involving Distributed Computation. <a href="http://www.guinnessworldrecords.com/world-records/largest-networked-chess-computer/" target="_blank">ChessBrain</a></li>
+<li>Co-authored two technical books published by Prentice Hall and Springer. Published research papers and articles with ACM, IEEE,  IBM, O&#39;Reilly, and the Linux Journal.</li>
+</ul>
+
+<h2>Conference Talks</h2>
+<ul>
+  <li>2018 RedisConf18, Pier 27, San Francisco, California. Building light-weight Microservices using Redis. My talk discussed how to leverage Redis to build microservice frameworks <a href="https://speakerdeck.com/cjus/building-light-weight-microservices-using-redis" target="_blank">PDF</a> | <a href="https://youtu.be/z25CPqJMFUk">video</a></li>
+  <li>2016 EmpireNode conference, Smithsonian National Museum of the American Indian in New York City. My talk was on building NodeJS Microservices using an open source library I developed called Hydra. <a href="https://youtu.be/j_yVf9Blcjo">video</a></li>
+  <li>2005 BoF Linux conference, Copenhagen, Denmark. I delivered the conference keynote presentation, entitled, "Tapping the Matrix". My talk focused on how Open Source tools are being used to build distributed computation projects.</li>
+</ul>
+
+<h2>Publications</h2>
+
+<ul>
+<li>(2007) Advanced Intelligent Paradigms in Computer Games. Collaborated with Dr. Colin Frayn on a chapter on ChessBrain for the <q>Studies in Computational Intelligence</q> series, Vol. 71. ISBN: 978-3-540-72704-0 <a href="http://www.amazon.com/Advanced-Intelligent-Paradigms-Computational-Intelligence/dp/3540727043/ref=sr_1_1/104-6137022-7890345?ie=UTF8&amp;s=books&amp;qid=1191738121&amp;sr=8-1" target="_blank">Amazon</a></li>
+<li>(2006) IEEE Symposium on Computational Intelligence and Games. ChessBrain II - A Hierarchical Infrastructure for Distributed Inhomogeneous Speed-Critical Computation. Presented at the 2006 IEEE Symposium on Computational Intelligence and Games. <a href="http://carlosjustiniano.com/papers/chessbrainII.pdf" target="_blank">PDF</a></li>
+<li>(2005) LinuxForum BoF. Tapping the Matrix: Harnessing distributed computing resources using Open Source tools. Presented in the keynote presentation at LinuxForum BoF 2005 in Copenhagen Denmark. <a href="http://carlosjustiniano.com/papers/tappingthematrixrevisited.pdf" target="_blank">PDF</a></li>
+<li>(2004) International Conference On Scientific and Engineering Computation. The ChessBrain Project - Massively Distributed Inhomogeneous Speed-Critical Computation. Presented at the International Conference On Scientific and Engineering Computation in Singapore. <a href="http://carlosjustiniano.com/papers/chessbrain-discc.pdf">PDF</a></li>
+<li>(2004) IBM Developerworks site. Automate backups on Linux. This article focuses on secure network backups under Linux. <a href="http://carlosjustiniano.com/papers/chessbrainII.pdf" target="_blank">PDF</a></li>
+<li>(2004) O&#39;Reilly P2P. I wrote a two-part series for the OpenP2P site on harnessing the idle processing power of distributed machines. <a href="http://www.openp2p.com/pub/a/p2p/2004/04/16/matrix.html" target="_blank">PDF</a></li>
+</ul>
+
+<h2>Blog posts</h2>
+<ul>
+    <li><a href="https://medium.com/flywheel-tech/cloud-scale-file-transfer-370d69120fa">Cloud-scale file transfer: Using NodeJS, Redis, Docker and AWS Lambda</a></li>
+    <li><a href="https://medium.com/@cjus/iot-for-ninjas-902c65854ab4">IoT for Ninja’s: Microcontrollers and sensors meet martial arts training</a></li>
+    <li><a href="https://medium.com/@cjus/desktop-apps-using-electron-preact-and-material-design-8161938624c6">Desktop apps using Electron, Preact and Material Design</a>
+        <li><a href="https://medium.com/flywheel-tech/embracing-microservices-11750470ba31">Embracing Microservices</a></li>
+    <li><a href="https://medium.com/flywheel-tech/building-light-weight-microservices-using-redis-23f051624647">Building Light-weight Microservices using Redis"</a></li>
+</ul>
+<h4>More here:</hr>
+<ul>
+    <li>On <a href="https://medium.com/@cjus">Medium</a></li>
+    <li>On <a href="https://community.risingstack.com/author/carlos/">RisingStack</a></li>
+    <li>Node work featured on Node Weekly: <a href="http://nodeweekly.com/issues/169">#169</a>, <a href="http://nodeweekly.com/issues/175">#175</a>, <a href="http://nodeweekly.com/issues/181">#181</a>, <a href="http://nodeweekly.com/issues/182">#182</a></li>
+</ul>
+
+<h2>Presentations</h2>
+
+<p>Presentations before groups of varying sizes at tech meetups.</p>
+<ul>
+    <li>(2018) Building Distributed Microservices using Redis, NYCNode hosted at ShutterStock. <a href="https://www.youtube.com/watch?v=csM8e6O-Ry8">video</a></li>
+    <li>(2018) Building Distributed Microservices using NodeJS, Redis & Hydra Service @Flywheel - presented at Microservices NYC hosted at ThoughtWorks. <a href="https://www.meetup.com/Microservices-NYC/events/248541372/">Meetup</a></li>
+  <li>(2017) Graphs, Graph DBs, and Node at NYCNode <a href="https://speakerdeck.com/cjus/graphs-graphdbs-and-javascript" target="_blank">slides</a>
+  <li>(2016) Node in small places at NYCNode <a href="https://speakerdeck.com/cjus/node-in-small-places" target="_blank">slides</a></li>
+  <li>(2016) Node in small places <a href="https://cjus.github.io/node-in-small-places-presentation" target="_blank">slides</a></li>
+  <li>(2015) Intro to Node.JS <a href="https://cjus.github.io/nodejs-presentation" target="_blank">slides</a></li>
+  <li>(2015) Writing cleaner JavaScript <a href="https://cjus.github.io/writing-cleaner-js-presentation" target="_blank">slides</a></li>
+  <li>(2015) A look at Pixi.js. A look at Pixi.js, a 2D rendering library for WebGL with Canvas fallback.
+  <a href="https://cjus.github.io/pixijs-presentation" target="_blank">slides</a> </li>
+  <li>(2015) Introduction to Modern Web Development</li>
+  <li>(2014) YAAP: Yet Another Angular Presentation <a href="https://cjus.github.io/AngularPresentation" target="_blank">slides</a> </li>
+  <li>(2013) HTML5 Mobile Development. A look at HTML/JavaScript leading up to mobile development. <a href="http://www.slideshare.net/carlosjustiniano2/html-for-mobile-development" target="_blank">slides</a></li>
+  <li>(2013) How Computers Play Chess. A look at computer chess history leading up to how computers actually play chess. <a href="http://www.slideshare.net/carlosjustiniano2/how-computers-play-chess-26552933" target="_blank">slides</a></li>
+  <li>(2011) Node.js in Under 5 Minutes. Quick introduction to NodeJS back in 2011. <a href="https://www.youtube.com/watch?v=A2pl650qe0I" target="_blank">YouTube</a></li>
+  <li>(2011) CouchDB in Under 143 seconds. Introduction to the NoSQL CouchDB. <a href="https://www.youtube.com/watch?v=7Gbg_wM7X8w" target="_blank">YouTube</a></li>
+  <li>(2005) LinuxForum BoF. My keynote presentation at LinuxForum BoF 2005 in Copenhagen Denmark. <a href="http://carlosjustiniano.com/papers/tappingthematrixrevisited.pdf" target="_blank">PDF</a></li>
+</ul>
+
+<h2>Open Source Projects (github)</h2>
+
+<p>Select projects on Github:</p>
+
+<ul>
+  <li>Hydra. Hydra is a NodeJS light-weight microservices library built on Redis. <a href="https://github.com/flywheelsports/fwsp-hydra" target="_blank">repo</a></li>
+  <li>Hydra-Express. A module which wraps Hydra and ExpressJS to provide an out of the box microservice which can support API routes and handlers. <a href="https://github.com/flywheelsports/fwsp-hydra-express" target="_blank">repo</a></li>
+  <li>Hydra-Router. A service aware router for Hydra Services. <a href="https://github.com/flywheelsports/fwsp-hydra-router" target="_blank">repo</a></li>
+  <li>Hydra Cluster. A Node-based compute cluster. <a href="https://github.com/cjus/hydra-cluster" target="_blank">repo</a></li>
+  <li>Universal Message Format (UMF) specification. A messaging protocol for use with IoT, messaging queuing and microservices. <a href="http://github.com/cjus/umf" target="_blank">repo</a></li>
+  <li>QCypher (NodeJS, JavaScript).  A q/promise based pure JS library for working with the Neo4j graph database using NodeJS. <a href="http://github.com/cjus/qcypher" target="_blank">repo</a></li>
+</ul>
+
+<p>More projects at: <a href="https://github.com/cjus">https://github.com/cjus</a>
+</body>
 </html>
+
